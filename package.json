@@ -1,0 +1,16 @@
+{
+  "name": "fed_test",
+  "version": "1.0.0",
+  "description": "project for FED test",
+  "author": "Michael Reed",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "dependencies": {
+    "grunt-cli": "^1.2.0"
+  }
+}

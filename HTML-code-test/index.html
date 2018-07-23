@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FED Test</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+  </head>
+  <body id="custom">
+    <header> 
+    <nav class="top py-1 navbar navbar-expand-md navbar-dark bg-white fixed-top">
+      <h1 class="mt-0 col-12-sm logo col-6-md">
+        <a class="navbar-brand" href="#">
+          <picture>
+            <source media="(max-width: 576px)" srcset="images/SVGs/TEN-logo-mark.svg" type="image/svg+xml">
+            <source media="(min-width: 577px)" srcset="images/SVGs/TEN-logo.svg" type="image/svg+xml">
+            <img src="images/SVGs/TEN-logo-mark.svg" alt="Ten Realty logo" >
+          </picture> 
+        </a>
+      </h1>
+
+
+      <div class="header-right-contact mx-1 mt-2 col-6-md">
+        <ul class="list-unstyled mb-0">
+          <li class="mx-2">
+            <a href="#">
+              <span class="icon-set">
+                <svg xmlns="http://www.w3.org/2000/svg"  width="14" height="14" viewBox="0 0 14 14"><title>contact</title><path d="M2.81,6.05a11.68,11.68,0,0,0,5.14,5.14L9.66,9.48a.68.68,0,0,1,.8-.18,8.7,8.7,0,0,0,2.77.44.75.75,0,0,1,.77.77v2.73a.75.75,0,0,1-.77.77,12.75,12.75,0,0,1-9.35-3.88A12.75,12.75,0,0,1,0,.77.75.75,0,0,1,.77,0H3.5a.75.75,0,0,1,.77.77A8.7,8.7,0,0,0,4.7,3.54a.75.75,0,0,1-.18.8Z"/></svg>
+              </span>
+              <span>Contact</span>
+            </a>
+          </li>
+          <li class="mx-2">
+            <a href="#">
+              <span class="icon-set">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><title>account</title><path d="M2.39,9.72A12.34,12.34,0,0,1,7,8.76a12.34,12.34,0,0,1,4.61,1q2.39,1,2.39,2.52V14H0V12.24Q0,10.68,2.39,9.72ZM9.46,6A3.35,3.35,0,0,1,7,7,3.35,3.35,0,0,1,4.54,6a3.35,3.35,0,0,1-1-2.46A3.42,3.42,0,0,1,4.54,1,3.32,3.32,0,0,1,7,0,3.32,3.32,0,0,1,9.46,1a3.42,3.42,0,0,1,1,2.48A3.35,3.35,0,0,1,9.46,6Z"/></svg>
+              </span>
+              <span>Account</span>
+            </a>
+          </li>
+          <li class="mx-2 d-md-none">
+            <a href="#" data-toggle="collapse" data-target="#showNavigation" aria-controls="showNavigation" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-set">
+                <svg viewBox="0 0 30 30"  width="14" height="14" xmlns="http://www.w3.org/2000/svg"><title>menu</title><path stroke="rgba(0, 0, 0, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>
+              </span>
+              <span>Menu</span></a>
+            </li>
+        </ul>
+      </div>
+
+      <div class="site-nav collapse navbar-collapse" id="showNavigation">
+        <ul class="navbar-nav mr-auto d-md-flex justify-content-md-between mt-1">
+              <li class="nav-item active">
+                <a href="#">search</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">communities</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">services</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">about us</a>
+              </li>
+            </ul>
+      </div>
+    </nav>
+  
+    <section class="find-listings">
+        <div class=" holder">
+        
+        <div class="py-3 d-flex row justify-content-center">
+            <div class="col-sm-6 d-flex row justify-content-center">
+              <label for="search-box" class="sr-only">Address, City, Zip, or MLS#</label>
+              <input type="text" id="search-box" placeholder="Address, City, Zip, or MLS#" name="search-box" class="col-7">
+              <span class="input-group-append col-4 p-0 col-sm-4  ml-sm-3">
+                <button class="btn contact-me" type="button">
+                    <span class="d-block d-sm-none search-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14"><title>search</title><path d="M10,8.82l4,4L12.8,14l-4-4V9.38L8.6,9.16A5,5,0,0,1,5.22,10.4a5.06,5.06,0,0,1-3.7-1.5A5,5,0,0,1,0,5.22a5,5,0,0,1,1.52-3.7A5,5,0,0,1,5.22,0,5,5,0,0,1,8.9,1.52a5.07,5.07,0,0,1,1.5,3.7A5,5,0,0,1,9.16,8.6l.23.23ZM2.66,7.77A3.47,3.47,0,0,0,5.22,8.82,3.47,3.47,0,0,0,7.77,7.77,3.48,3.48,0,0,0,8.82,5.22,3.48,3.48,0,0,0,7.77,2.66,3.48,3.48,0,0,0,5.22,1.61,3.48,3.48,0,0,0,2.66,2.66,3.47,3.47,0,0,0,1.61,5.22,3.47,3.47,0,0,0,2.66,7.77Z"/></svg>
+                    </span>
+                    <span class="d-none d-sm-block">Search</span>
+                </button>
+              </span>
+            </div>
+            <div class="col-sm-6 d-none d-sm-block">
+              <ul class="list-unstyled row justify-content-center">
+                      <li class="col-4 text-uppercase pt-3"><a href="#">new listings</a></li>
+                      <li class="col-4 text-uppercase pt-3"><a href="#">open houses</a></li>
+                      <li class="col-4 text-uppercase pt-3"><a href="#">map search</a></li>
+                    </ul>
+            </div>
+            
+          </div>
+
+      </div>
+      </section>
+      </header>
+    
+
+    <section id="agent-card" class="">
+      <section id="agent-header"  class="mx-1 mx-sm-3 ">
+        <div class="holder row">
+          <div class="agent-image col-sm-4">
+
+            <picture>
+               <!-- large desktop --> 
+               <source media="(min-width: 75em)" srcset="images/saramortensun_large-1x.jpg">
+             
+               <!-- small desktop -->
+               <source  media="(min-width: 62em)" srcset="images/saramortensun_medium-1x.jpg">
+             
+               <!-- tablet / large phone -->
+               <source media="(min-width: 48em)" srcset="images/saramortensun_small-1x.jpg">
+             
+               <!-- landscape -->
+               <source media="(min-width: 34em)" srcset="images/saramortensun_small-1x.jpg">
+             
+               <!-- portrait -->
+               <img alt="Jane Smith Photo" src="images/saramortensun_xsmall-1x.jpg" srcset="images/saramortensun_xsmall-1x.jpg 1x, images/saramortensun_xsmall-1-5x.jpg 1.5x" class="img-fluid">
+             </picture>
+          </div>
+          <div class="agent-social-card mt-3 mt-md-4  mt-lg-5 col-sm-4">
+            <h2>Jane Smith</h2>
+            <p class="text-uppercase"><strong>Realtor&copy;</strong></p>
+            <button type="button" class="btn btn-info contact-me col-sm-12">Contact Me</button>
+            <ul class="dark-social list-unstyled mt-3 row d-md-flex justify-content-md-around">
+                <li class="col-sm-2 col">
+                    <a href="#">
+                    <!-- facebook svg -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22.85" viewBox="0 0 12 22.85"><title>facebook</title><path d="M11.94,3.67H9.77c-1.7,0-2,.82-2,2V8.27h4l-.54,4.09H7.75V22.85H3.52V12.36H0V8.27H3.52v-3c0-3.5,2.14-5.4,5.27-5.4A27.19,27.19,0,0,1,11.94,0Z"/></svg>
+                    <!-- /facebook svg -->
+                    </a>
+                </li>
+                <li class="col-sm-2 col">
+                    <a href="#">
+                    <!-- linkedin svg -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.58" height="19.57" viewBox="0 0 20.58 19.57"><title>linkedin</title><path d="M2.46,4.58h0A2.28,2.28,0,0,1,0,2.29,2.3,2.3,0,0,1,2.49,0,2.28,2.28,0,0,1,5,2.29,2.29,2.29,0,0,1,2.46,4.58ZM4.68,19.67H.25V6.39H4.68Zm15.9,0H16.17v-7.1c0-1.78-.64-3-2.24-3a2.42,2.42,0,0,0-2.26,1.61,3.33,3.33,0,0,0-.15,1.08v7.41H7.11c.05-12,0-13.28,0-13.28h4.41V8.32h0a4.38,4.38,0,0,1,4-2.24c2.91,0,5.08,1.9,5.08,6Z"/></svg>
+                    <!-- /linkedin svg -->
+                    </a>
+                </li>
+                <li class="col-sm-2 col">
+                    <a href="#">
+                    <!-- twitter svg -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21.11" height="17.19" viewBox="0 0 21.11 17.19"><title>twitter</title><path d="M18.94,4.27c0,.19,0,.38,0,.56A12.23,12.23,0,0,1,6.65,17.15,12.23,12.23,0,0,1,0,15.21a9,9,0,0,0,1,.05,8.67,8.67,0,0,0,5.37-1.85,4.33,4.33,0,0,1-4-3,5.47,5.47,0,0,0,.82.07,4.58,4.58,0,0,0,1.14-.15A4.33,4.33,0,0,1,.86,6.08V6a4.36,4.36,0,0,0,2,.55A4.33,4.33,0,0,1,1.47.79,12.3,12.3,0,0,0,10.4,5.32a4.9,4.9,0,0,1-.11-1,4.33,4.33,0,0,1,7.49-3,8.52,8.52,0,0,0,2.75-1,4.31,4.31,0,0,1-1.9,2.38A8.68,8.68,0,0,0,21.11,2,9.32,9.32,0,0,1,18.94,4.27Z"/></svg>
+                    <!-- /twitter svg -->
+                    </a>
+                </li>
+                <li class="col-sm-2 col">
+                    <a href="#">
+                    <!-- youtube svg -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19.85" height="24.01" viewBox="0 0 19.85 24.01"><title>youtube</title><path d="M19.51,21.78a2.5,2.5,0,0,1-2.14,1.94A65.6,65.6,0,0,1,9.93,24a65.6,65.6,0,0,1-7.44-.28A2.49,2.49,0,0,1,.35,21.78,21.11,21.11,0,0,1,0,17.09a21.87,21.87,0,0,1,.35-4.69,2.54,2.54,0,0,1,2.16-2,68.43,68.43,0,0,1,7.42-.27,68.81,68.81,0,0,1,7.44.27,2.52,2.52,0,0,1,2.14,2,21.05,21.05,0,0,1,.35,4.69A21.93,21.93,0,0,1,19.51,21.78Zm-13.84-8V12.5H1.49v1.26H2.89v7.62H4.23V13.76ZM7.85,0,6.23,5.35V9H4.89V5.35a21.28,21.28,0,0,0-.82-2.84C3.78,1.67,3.48.83,3.2,0H4.62l1,3.52L6.48,0ZM9.28,21.38V14.76H8.09v5.06q-.4.56-.76.56T7,20.11a3.14,3.14,0,0,1,0-.47V14.76H5.84V20a3.26,3.26,0,0,0,.11,1,.73.73,0,0,0,.78.5,2,2,0,0,0,1.37-.82v.72ZM11.44,6.81a2.64,2.64,0,0,1-.37,1.58,1.65,1.65,0,0,1-1.42.68,1.65,1.65,0,0,1-1.41-.68,2.68,2.68,0,0,1-.37-1.58V4.46a2.6,2.6,0,0,1,.38-1.57,1.65,1.65,0,0,1,1.41-.68,1.65,1.65,0,0,1,1.42.68,2.6,2.6,0,0,1,.38,1.57ZM10.22,4.22c0-.62-.17-.92-.58-.92s-.58.31-.58.92V7c0,.62.19.94.58.94s.58-.32.58-.94Zm3.62,12.54a4.59,4.59,0,0,0-.12-1.33.94.94,0,0,0-1-.75,1.63,1.63,0,0,0-1.25.72V12.5H10.33v8.88h1.19v-.64a1.65,1.65,0,0,0,1.25.74.94.94,0,0,0,1-.74,4.75,4.75,0,0,0,.12-1.34Zm-1.19,2.73c0,.6-.17.9-.52.9a.86.86,0,0,1-.6-.29v-4a.86.86,0,0,1,.6-.29c.35,0,.52.31.52.9ZM15.93,9H14.71V8.24a1.92,1.92,0,0,1-1.38.83.76.76,0,0,1-.79-.5,3.41,3.41,0,0,1-.11-1V2.29h1.22V7.21a3,3,0,0,0,0,.47c0,.19.12.29.28.29s.5-.19.76-.58V2.29h1.22Zm2.44,10.11H17.15a7.12,7.12,0,0,1,0,.82.52.52,0,0,1-.54.48c-.42,0-.62-.31-.62-.92V18.3h2.4V16.92A2.66,2.66,0,0,0,18,15.37a1.83,1.83,0,0,0-2.85,0,2.55,2.55,0,0,0-.38,1.55v2.32a2.52,2.52,0,0,0,.39,1.55,1.7,1.7,0,0,0,1.45.68,1.66,1.66,0,0,0,1.45-.71,1.55,1.55,0,0,0,.28-.72,5.21,5.21,0,0,0,0-.78ZM17.18,17.3H16v-.62c0-.6.2-.91.6-.91s.6.31.6.91Z"/></svg>
+                    <!-- /youtube svg -->
+                    </a>
+                </li>
+                <li class="col-sm-2 col">
+                    <a href="#">
+                    <!-- instagram svg -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><title>instagram</title><path d="M11.5,2.07c3.07,0,3.43,0,4.65.07a6.36,6.36,0,0,1,2.14.4,3.56,3.56,0,0,1,1.32.86,3.56,3.56,0,0,1,.86,1.32,6.36,6.36,0,0,1,.4,2.14c.06,1.21.07,1.58.07,4.65s0,3.43-.07,4.65a6.36,6.36,0,0,1-.4,2.14,3.81,3.81,0,0,1-2.18,2.18,6.36,6.36,0,0,1-2.14.4c-1.21.06-1.58.07-4.65.07s-3.43,0-4.65-.07a6.36,6.36,0,0,1-2.14-.4A3.56,3.56,0,0,1,3.4,19.6a3.56,3.56,0,0,1-.86-1.32,6.36,6.36,0,0,1-.4-2.14c-.06-1.21-.07-1.58-.07-4.65s0-3.43.07-4.65a6.36,6.36,0,0,1,.4-2.14A3.56,3.56,0,0,1,3.4,3.4a3.56,3.56,0,0,1,1.32-.86,6.36,6.36,0,0,1,2.14-.4c1.21-.06,1.58-.07,4.65-.07M11.5,0C8.38,0,8,0,6.76.07A8.44,8.44,0,0,0,4,.6a5.64,5.64,0,0,0-2,1.33A5.64,5.64,0,0,0,.6,4,8.44,8.44,0,0,0,.07,6.76C0,8,0,8.38,0,11.5S0,15,.07,16.24A8.44,8.44,0,0,0,.6,19a5.64,5.64,0,0,0,1.33,2A5.64,5.64,0,0,0,4,22.4a8.44,8.44,0,0,0,2.79.53C8,23,8.38,23,11.5,23s3.51,0,4.74-.07A8.44,8.44,0,0,0,19,22.4,5.88,5.88,0,0,0,22.4,19a8.44,8.44,0,0,0,.53-2.79C23,15,23,14.62,23,11.5S23,8,22.93,6.76A8.44,8.44,0,0,0,22.4,4a5.64,5.64,0,0,0-1.33-2A5.64,5.64,0,0,0,19,.6,8.44,8.44,0,0,0,16.24.07C15,0,14.62,0,11.5,0Z"/><path d="M11.5,5.59a5.91,5.91,0,1,0,5.91,5.91A5.91,5.91,0,0,0,11.5,5.59Zm0,9.74a3.83,3.83,0,1,1,3.83-3.83A3.83,3.83,0,0,1,11.5,15.33Z"/><circle cx="17.64" cy="5.36" r="1.38"/></svg>
+                    <!-- /instagram svg -->
+                    </a>
+                </li>
+              
+            </ul>
+          </div>
+          <div class="agent-location col-sm-4 mt-sm-3 mt-md-4 mt-lg-5">
+            <ul class="list-unstyled mt-0">
+              <li class="mb-3"><a href="tel:000"><span><svg xmlns="http://www.w3.org/2000/svg"  width="24" height="24" viewBox="0 0 14 14"><title>contact</title><path d="M2.81,6.05a11.68,11.68,0,0,0,5.14,5.14L9.66,9.48a.68.68,0,0,1,.8-.18,8.7,8.7,0,0,0,2.77.44.75.75,0,0,1,.77.77v2.73a.75.75,0,0,1-.77.77,12.75,12.75,0,0,1-9.35-3.88A12.75,12.75,0,0,1,0,.77.75.75,0,0,1,.77,0H3.5a.75.75,0,0,1,.77.77A8.7,8.7,0,0,0,4.7,3.54a.75.75,0,0,1-.18.8Z"/></svg></span><span class="font-weight-bold">530.830.2150</span></a></li>
+              <li class="mb-3"><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" viewBox="0 0 25 20"><title>website</title><path d="M25,20V0H0V20Zm-9-2H2V12H16Zm0-8H2V4H16Zm7,8H18V4h5Z"/></svg></span><span class="font-weight-bold">Vist my website</span></a></li>
+              <li class="mb-3"><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg" width="23" height="22" viewBox="0 0 23 22"><title>office</title><path d="M12,6V0H0V22H23V6ZM5,20H2V17H5Zm0-5H2V12H5Zm0-5H2V7H5ZM5,5H2V2H5Zm5,15H7V17h3Zm0-5H7V12h3Zm0-5H7V7h3Zm0-5H7V2h3ZM21,20H12V18h2V15H12V13h2V10H12V8h9ZM19,10H16v3h3Zm0,5H16v3h3Z"/></svg></span><span class="font-weight-bold">Denver office</span></a></li>
+              <li class="mb-3"><a href="#"><span><svg xmlns="http://www.w3.org/2000/svg"  width="24" height="22" viewBox="0 0 24 22"><title>enewsletter</title><path d="M4,0V4H0V19.21A2.79,2.79,0,0,0,2.79,22h18.3A3.06,3.06,0,0,0,24,19V0ZM22,19a1.08,1.08,0,0,1-.91,1H2.79A.79.79,0,0,1,2,19.21V6H4V17H6L5.81,2H22V19Z"/><rect x="8" y="6" width="12" height="2"/><rect x="8" y="11" width="5" height="2"/><rect x="8" y="15" width="5" height="2"/><rect x="15" y="11" width="5" height="2"/><rect x="15" y="15" width="5" height="2"/></svg></span><span class="font-weight-bold">eNewsletter Sign Up</span></a></li>
+            </ul>
+          </div>
+          </div>
+      </section>
+
+
+      <section id="agent-about" class="col-12 clearfix  pt-3 pb-1 px-2">
+
+         <div class="dropdown acc-dropdown d-block d-sm-none mt-3">
+          <a class="custom-dropdown font-weight-bold" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        About Me
+        <span class="angle-down"><svg xmlns="http://www.w3.org/2000/svg" width="7.23" height="4.22" viewBox="0 0 7.23 4.22"><title>angle-down</title><path d="M7.16.77,3.78,4.15a.23.23,0,0,1-.33,0L.07.77A.25.25,0,0,1,0,.6.25.25,0,0,1,.07.44L.44.07A.23.23,0,0,1,.6,0,.25.25,0,0,1,.77.07L3.62,2.92,6.47.07a.23.23,0,0,1,.33,0l.36.36A.25.25,0,0,1,7.23.6.25.25,0,0,1,7.16.77Z"/></svg></span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <div id="dropdown-one">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link custom-btn" data-toggle="collapse" data-target="#about-me" aria-expanded="true" aria-controls="about-me">
+                        About Me
+
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="dropdown-two">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link custom-btn collapsed" data-toggle="collapse" data-target="#my-listings" aria-expanded="false" aria-controls="my-listings">
+                        My Listings
+                      </button>
+                    </h5>
+                  </div>
+                   <div id="dropdown-three">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link custom-btn collapsed" data-toggle="collapse" data-target="#my-solds" aria-expanded="false" aria-controls="my-solds">
+                        My Solds
+                      </button>
+                    </h5>
+                  </div>
+                   <div id="dropdown-four">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link custom-btn collapsed" data-toggle="collapse" data-target="#testimonials" aria-expanded="false" aria-controls="testimonials">
+                        Testimonials
+                      </button>
+                    </h5>
+                  </div>
+        </div>
+        </div>
+     
+        <section id="agent-information">
+          <div class="px-4 holder">
+
+            <!-- agent accordion -->
+            <div id="accordion" class="pb-1-xs row">
+                <div class="acc-headings d-none d-sm-block">
+                  <div class="acc-group nogutter row">
+                  <div id="headingOne" class="col py-3 active">
+                    
+                      <div class="acc-link" data-toggle="collapse" data-target="#about-me" aria-expanded="true" aria-controls="about-me">
+                        About Me
+                      </div>
+                    
+                  </div>
+                  <div id="headingTwo" class="col py-3">
+                    
+                      <div class="acc-link collapsed" data-toggle="collapse" data-target="#my-listings" aria-expanded="false" aria-controls="my-listings">
+                        My Listings
+                      </div>
+                    
+                  </div>
+                   <div id="headingThree" class="col py-3">
+                    
+                      <div class="acc-link collapsed" data-toggle="collapse" data-target="#my-solds" aria-expanded="false" aria-controls="my-solds">
+                        My Solds
+                      </div>
+                    
+                  </div>
+                   <div id="headingFour" class="col py-3">
+                    
+                      <div class="acc-link collapsed" data-toggle="collapse" data-target="#testimonials" aria-expanded="false" aria-controls="testimonials">
+                        Testimonials
+                      </div>
+                    
+                  </div>
+                </div>
+                </div> <!-- / accordion heading -->
+
+
+               
+                  <div class="acc-information col-12">
+
+                  <div id="about-me" class="collapse show mt-3 row" aria-labelledby="headingOne" data-parent="#accordion">
+                    
+                      <p class="col-sm-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>    
+
+                      <aside class="agent-skills col-sm-4">
+                        <div class="mt-2">
+                          <h5 class="text-uppercase">Language</h5>
+                          <p>Dutch, Finnish, Spanish</p>
+                        </div>
+                        <div class="mt-2">
+                          <h5 class="text-uppercase">Designations</h5>
+                          <p>CRS, GRI, CNE</p>
+                        </div>
+                      </aside>               
+                    
+                  </div>
+                  
+                  <div id="my-listings" class="collapse mt-0" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia officiis ab quis aspernatur labore facere temporibus obcaecati tempore enim molestiae eum sapiente esse eligendi est, illum fuga cum iusto dolorem.
+                    </p>
+                  </div>
+                
+                
+                  <div id="my-solds" class="collapse mt-0" aria-labelledby="headingThree" data-parent="#accordion">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sed, eum quibusdam ullam dolor quod magni dolore ipsa nihil nulla sint corporis eos atque maxime quaerat explicabo? Ut natus, eaque.
+                    </p>
+                  </div>
+                  <div id="testimonials" class="collapse mt-0" aria-labelledby="headingFour" data-parent="#accordion">
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla omnis quidem ipsa minima reiciendis doloremque magni eveniet vel nisi, in ut at repudiandae maiores eius, provident doloribus, ex quas culpa.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            <!-- /agent accordion -->
+
+            
+          </div>
+          </section>
+      </section>
+    </section> <!-- / agent card -->
+    
+
+
+    <footer>
+      <div class="holder pb-4 d-sm-flex justify-content-sm-between text-center text-sm-left px-3">
+      <div class="contact col-sm-6 col-md-6 col-md-5">
+        <p class="pt-3 pb-0 mb-0"><a href="tel:000"><span class="pr-2 light-social"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"><title>contact</title><path d="M2.81,6.05a11.68,11.68,0,0,0,5.14,5.14L9.66,9.48a.68.68,0,0,1,.8-.18,8.7,8.7,0,0,0,2.77.44.75.75,0,0,1,.77.77v2.73a.75.75,0,0,1-.77.77,12.75,12.75,0,0,1-9.35-3.88A12.75,12.75,0,0,1,0,.77.75.75,0,0,1,.77,0H3.5a.75.75,0,0,1,.77.77A8.7,8.7,0,0,0,4.7,3.54a.75.75,0,0,1-.18.8Z"/></svg></span>1-800-234-4567</a></p>
+        <p class="mt-0">5678 Main Street, Denver, CO 80123</p>
+
+        
+        <ul class="light-social list-unstyled row mt-3 pt-sm-6 mb-4 d-flex align-items-sm-end">
+                <li class="col">
+                    <a href="#">
+                    <!-- facebook svg -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22.85" viewBox="0 0 12 22.85"><title>facebook</title><path d="M11.94,3.67H9.77c-1.7,0-2,.82-2,2V8.27h4l-.54,4.09H7.75V22.85H3.52V12.36H0V8.27H3.52v-3c0-3.5,2.14-5.4,5.27-5.4A27.19,27.19,0,0,1,11.94,0Z"/></svg>
+                    <!-- /facebook svg -->
+                    </a>
+                </li>
+                <li class="col">
+                    <a href="#">
+                    <!-- linkedin svg -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20.58" height="19.57" viewBox="0 0 20.58 19.57"><title>linkedin</title><path d="M2.46,4.58h0A2.28,2.28,0,0,1,0,2.29,2.3,2.3,0,0,1,2.49,0,2.28,2.28,0,0,1,5,2.29,2.29,2.29,0,0,1,2.46,4.58ZM4.68,19.67H.25V6.39H4.68Zm15.9,0H16.17v-7.1c0-1.78-.64-3-2.24-3a2.42,2.42,0,0,0-2.26,1.61,3.33,3.33,0,0,0-.15,1.08v7.41H7.11c.05-12,0-13.28,0-13.28h4.41V8.32h0a4.38,4.38,0,0,1,4-2.24c2.91,0,5.08,1.9,5.08,6Z"/></svg>
+                    <!-- /linkedin svg -->
+                    </a>
+                </li>
+                <li class="col">
+                    <a href="#">
+                    <!-- twitter svg -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21.11" height="17.19" viewBox="0 0 21.11 17.19"><title>twitter</title><path d="M18.94,4.27c0,.19,0,.38,0,.56A12.23,12.23,0,0,1,6.65,17.15,12.23,12.23,0,0,1,0,15.21a9,9,0,0,0,1,.05,8.67,8.67,0,0,0,5.37-1.85,4.33,4.33,0,0,1-4-3,5.47,5.47,0,0,0,.82.07,4.58,4.58,0,0,0,1.14-.15A4.33,4.33,0,0,1,.86,6.08V6a4.36,4.36,0,0,0,2,.55A4.33,4.33,0,0,1,1.47.79,12.3,12.3,0,0,0,10.4,5.32a4.9,4.9,0,0,1-.11-1,4.33,4.33,0,0,1,7.49-3,8.52,8.52,0,0,0,2.75-1,4.31,4.31,0,0,1-1.9,2.38A8.68,8.68,0,0,0,21.11,2,9.32,9.32,0,0,1,18.94,4.27Z"/></svg>
+                    <!-- /twitter svg -->
+                    </a>
+                </li>
+                <li class="col">
+                    <a href="#">
+                    <!-- youtube svg -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19.85" height="24.01" viewBox="0 0 19.85 24.01"><title>youtube</title><path d="M19.51,21.78a2.5,2.5,0,0,1-2.14,1.94A65.6,65.6,0,0,1,9.93,24a65.6,65.6,0,0,1-7.44-.28A2.49,2.49,0,0,1,.35,21.78,21.11,21.11,0,0,1,0,17.09a21.87,21.87,0,0,1,.35-4.69,2.54,2.54,0,0,1,2.16-2,68.43,68.43,0,0,1,7.42-.27,68.81,68.81,0,0,1,7.44.27,2.52,2.52,0,0,1,2.14,2,21.05,21.05,0,0,1,.35,4.69A21.93,21.93,0,0,1,19.51,21.78Zm-13.84-8V12.5H1.49v1.26H2.89v7.62H4.23V13.76ZM7.85,0,6.23,5.35V9H4.89V5.35a21.28,21.28,0,0,0-.82-2.84C3.78,1.67,3.48.83,3.2,0H4.62l1,3.52L6.48,0ZM9.28,21.38V14.76H8.09v5.06q-.4.56-.76.56T7,20.11a3.14,3.14,0,0,1,0-.47V14.76H5.84V20a3.26,3.26,0,0,0,.11,1,.73.73,0,0,0,.78.5,2,2,0,0,0,1.37-.82v.72ZM11.44,6.81a2.64,2.64,0,0,1-.37,1.58,1.65,1.65,0,0,1-1.42.68,1.65,1.65,0,0,1-1.41-.68,2.68,2.68,0,0,1-.37-1.58V4.46a2.6,2.6,0,0,1,.38-1.57,1.65,1.65,0,0,1,1.41-.68,1.65,1.65,0,0,1,1.42.68,2.6,2.6,0,0,1,.38,1.57ZM10.22,4.22c0-.62-.17-.92-.58-.92s-.58.31-.58.92V7c0,.62.19.94.58.94s.58-.32.58-.94Zm3.62,12.54a4.59,4.59,0,0,0-.12-1.33.94.94,0,0,0-1-.75,1.63,1.63,0,0,0-1.25.72V12.5H10.33v8.88h1.19v-.64a1.65,1.65,0,0,0,1.25.74.94.94,0,0,0,1-.74,4.75,4.75,0,0,0,.12-1.34Zm-1.19,2.73c0,.6-.17.9-.52.9a.86.86,0,0,1-.6-.29v-4a.86.86,0,0,1,.6-.29c.35,0,.52.31.52.9ZM15.93,9H14.71V8.24a1.92,1.92,0,0,1-1.38.83.76.76,0,0,1-.79-.5,3.41,3.41,0,0,1-.11-1V2.29h1.22V7.21a3,3,0,0,0,0,.47c0,.19.12.29.28.29s.5-.19.76-.58V2.29h1.22Zm2.44,10.11H17.15a7.12,7.12,0,0,1,0,.82.52.52,0,0,1-.54.48c-.42,0-.62-.31-.62-.92V18.3h2.4V16.92A2.66,2.66,0,0,0,18,15.37a1.83,1.83,0,0,0-2.85,0,2.55,2.55,0,0,0-.38,1.55v2.32a2.52,2.52,0,0,0,.39,1.55,1.7,1.7,0,0,0,1.45.68,1.66,1.66,0,0,0,1.45-.71,1.55,1.55,0,0,0,.28-.72,5.21,5.21,0,0,0,0-.78ZM17.18,17.3H16v-.62c0-.6.2-.91.6-.91s.6.31.6.91Z"/></svg>
+                    <!-- /youtube svg -->
+                    </a>
+                </li>
+                <li class="col">
+                    <a href="#">
+                    <!-- instagram svg -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><title>instagram</title><path d="M11.5,2.07c3.07,0,3.43,0,4.65.07a6.36,6.36,0,0,1,2.14.4,3.56,3.56,0,0,1,1.32.86,3.56,3.56,0,0,1,.86,1.32,6.36,6.36,0,0,1,.4,2.14c.06,1.21.07,1.58.07,4.65s0,3.43-.07,4.65a6.36,6.36,0,0,1-.4,2.14,3.81,3.81,0,0,1-2.18,2.18,6.36,6.36,0,0,1-2.14.4c-1.21.06-1.58.07-4.65.07s-3.43,0-4.65-.07a6.36,6.36,0,0,1-2.14-.4A3.56,3.56,0,0,1,3.4,19.6a3.56,3.56,0,0,1-.86-1.32,6.36,6.36,0,0,1-.4-2.14c-.06-1.21-.07-1.58-.07-4.65s0-3.43.07-4.65a6.36,6.36,0,0,1,.4-2.14A3.56,3.56,0,0,1,3.4,3.4a3.56,3.56,0,0,1,1.32-.86,6.36,6.36,0,0,1,2.14-.4c1.21-.06,1.58-.07,4.65-.07M11.5,0C8.38,0,8,0,6.76.07A8.44,8.44,0,0,0,4,.6a5.64,5.64,0,0,0-2,1.33A5.64,5.64,0,0,0,.6,4,8.44,8.44,0,0,0,.07,6.76C0,8,0,8.38,0,11.5S0,15,.07,16.24A8.44,8.44,0,0,0,.6,19a5.64,5.64,0,0,0,1.33,2A5.64,5.64,0,0,0,4,22.4a8.44,8.44,0,0,0,2.79.53C8,23,8.38,23,11.5,23s3.51,0,4.74-.07A8.44,8.44,0,0,0,19,22.4,5.88,5.88,0,0,0,22.4,19a8.44,8.44,0,0,0,.53-2.79C23,15,23,14.62,23,11.5S23,8,22.93,6.76A8.44,8.44,0,0,0,22.4,4a5.64,5.64,0,0,0-1.33-2A5.64,5.64,0,0,0,19,.6,8.44,8.44,0,0,0,16.24.07C15,0,14.62,0,11.5,0Z"/><path d="M11.5,5.59a5.91,5.91,0,1,0,5.91,5.91A5.91,5.91,0,0,0,11.5,5.59Zm0,9.74a3.83,3.83,0,1,1,3.83-3.83A3.83,3.83,0,0,1,11.5,15.33Z"/><circle cx="17.64" cy="5.36" r="1.38"/></svg>
+                    <!-- /instagram svg -->
+                    </a>
+                </li>
+              
+            </ul>
+        
+      </div>
+
+      <div class="policy  col-sm-6 text-sm-right col-md-6 col-lg-5">
+        <ul class="nav list-unstyled d-flex justify-content-between pt-sm-3">
+          <li class="nav-item"><a href="#">Site Map</a></li>
+          <li class="nav-item"><a href="#">Terms of Use</a></li>
+          <li class="nav-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p  class="mt-3">
+          &copy; 2016 TEN Realty. All Rights Reserved.
+        </p>
+        <div class="mt-3 row d-flex justify-content-sm-end justify-content-center white-icons">
+          <div class="col-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30.11" height="34.93" viewBox="0 0 30.11 34.93"><title>realtor</title><path d="M.61,30.81h.65a1.33,1.33,0,0,1,1,.22,1,1,0,0,1,.31.78.89.89,0,0,1-1,.89H1.16l1.33,2.17h.56L2,33.11a1.26,1.26,0,0,0,1.1-1.32,1.41,1.41,0,0,0-.59-1.16,1.79,1.79,0,0,0-1.1-.26H.17v4.52H.61V30.81Z"/><polygon points="5.14 32.38 5.14 30.81 7.05 30.81 7.05 30.37 4.73 30.37 4.73 34.87 7.05 34.87 7.05 34.43 5.14 34.43 5.14 32.84 7.05 32.84 7.05 32.38 5.14 32.38"/><path d="M11.14,33.06H9.43l.85-2.26.86,2.26ZM8.75,34.87l.54-1.41h2l.54,1.41h.48l-1.74-4.52H10L8.27,34.87Z"/><polygon points="15.62 34.87 15.62 34.43 14.03 34.43 14.03 30.37 13.58 30.37 13.58 34.87 15.62 34.87"/><polygon points="17.84 34.87 17.84 30.81 18.75 30.81 18.75 30.37 16.51 30.37 16.51 30.81 17.39 30.81 17.39 34.87 17.84 34.87"/><path d="M19.69,32.59a2.31,2.31,0,0,0,4,1.62A2.41,2.41,0,0,0,23.62,31a2.27,2.27,0,0,0-3.2,0,2.15,2.15,0,0,0-.73,1.65Zm.46,0a2,2,0,0,1,.68-1.48A1.73,1.73,0,0,1,22,30.68a1.91,1.91,0,0,1,0,3.81,1.82,1.82,0,0,1-1.84-1.91Z"/><path d="M26.24,30.81h.65a1.33,1.33,0,0,1,1,.22,1,1,0,0,1,.31.78.89.89,0,0,1-1,.89h-.43l1.33,2.17h.52l-1.1-1.76a1.26,1.26,0,0,0,1.1-1.32,1.43,1.43,0,0,0-.57-1.16,1.79,1.79,0,0,0-1.1-.26h-1.2v4.52h.44l0-4.07Z"/><path d="M0,0V28.74h28.5V0ZM26.25,25.09H15V14.29ZM15,14.23V3.41h3.2a5.43,5.43,0,0,1,0,10.84ZM12,3.3V25.14H3.75V3.3Z"/><path d="M29.3,29.53a.77.77,0,0,0-.57.24.78.78,0,0,0-.24.57.81.81,0,1,0,1.62,0,.8.8,0,0,0-.81-.81Zm.73.81a.67.67,0,0,1-.21.5.76.76,0,0,1-.52.22.78.78,0,0,1-.52-.22.69.69,0,0,1-.22-.52.78.78,0,0,1,.22-.52.71.71,0,0,1,.5-.21.69.69,0,0,1,.52.22.74.74,0,0,1,.24.54Zm-.71-.47H29v.94h.14v-.4h.22l.21.4h.17l-.21-.43a.24.24,0,0,0,.22-.24c0-.21-.16-.27-.42-.27Zm0,.09c.18,0,.27.05.27.17s-.09.17-.27.17h-.16V30Z"/></svg>
+          </div>
+          <div class="col-2">
+          <svg version="1.1" id="Layer_1"  width="34.2" height="34.93" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 34.2 34.9" style="enable-background:new 0 0 34.2 34.9;" xml:space="preserve"><title>equal-housing</title><path d="M17.1,0L0,8.1v3.7l1.6-0.8v14.1h31.1v-14l1.6,0.8V8.1L17.1,0z M29.4,21.9H4.9V9.5l12.3-5.8l12.3,5.9V21.9z"/><rect x="10.6" y="15.6" width="13.1" height="3.4"/><rect x="10.6" y="10.1" width="13.1" height="3.5"/><path d="M3.1,35c0.8,0,1.4-0.6,1.4-1.4c0-0.8-0.6-1.4-1.4-1.4l0,0c-0.8,0-1.4,0.6-1.4,1.4C1.7,34.4,2.3,35,3.1,35z M3.1,32.8 c0.5,0,0.8,0.4,0.8,0.8c0,0.5-0.4,0.8-0.8,0.9c-0.5,0-0.8-0.4-0.8-0.9C2.3,33.1,2.6,32.8,3.1,32.8z"/><path d="M6,34h0.3c0.6,0,0.9-0.3,0.9-0.8s-0.4-0.8-1-0.8H5.5V35H6V34zM6,32.8L6,32.8c0.4,0,0.6,0,0.6,0.4s-0.2,0.4-0.5,0.4H6V32.8  L6,32.8z"/><path d="M8.8,34H9c0.6,0,0.9-0.3,0.9-0.8s-0.4-0.8-1-0.8H8.2V35h0.6L8.8,34L8.8,34z M8.8,32.8h0.1c0.3,0,0.5,0,0.5,0.4  s-0.2,0.4-0.5,0.4H8.8V32.8L8.8,32.8z"/><path d="M12.2,35c0.8,0,1.3-0.7,1.3-1.4c0-0.8-0.7-1.3-1.4-1.3c-0.7,0-1.3,0.6-1.3,1.4C10.8,34.4,11.4,35,12.2,35  C12.1,35,12.2,35,12.2,35zM12.2,32.8c0.5,0,0.8,0.4,0.8,0.8c0,0.5-0.4,0.8-0.8,0.9c-0.5,0-0.8-0.4-0.8-0.9  C11.4,33.1,11.7,32.8,12.2,32.8z"/><path d="M15.7,33.8c0.4-0.1,0.6-0.4,0.6-0.7c0-0.6-0.4-0.8-1-0.8h-0.8v2.6h0.6v-1.1l0,0l0.7,1h0.7L15.7,33.8L15.7,33.8z M15.1,32.7 L15.1,32.7c0.4,0,0.6,0.1,0.6,0.4s-0.2,0.4-0.5,0.4h-0.1L15.1,32.7L15.1,32.7z"/><polygon points="18.3,32.8 18.8,32.8 18.8,32.3 17.1,32.3 17.1,32.8 17.7,32.8 17.7,34.9 18.3,34.9 18.3,32.8 18.3,32.8 "/><path d="M19.7,33.9c-0.1,0.6,0.4,1.1,1,1.2c0.6,0.1,1.1-0.4,1.2-1c0-0.1,0-0.1,0-0.2v-1.6h-0.6v1.5c0,0.3,0,0.8-0.5,0.8  s-0.5-0.5-0.5-0.8v-1.5h-0.6L19.7,33.9L19.7,33.9z"/><polygon points="23,34.9 23.5,34.9 23.5,33.2 23.5,33.2 25,35 25.4,35 25.4,32.3 24.9,32.3 24.9,34.1 24.9,34.1 23.4,32.3 23,32.3   23,34.9 23,34.9 "/><polygon points="27.1,32.3 26.5,32.3 26.5,34.9 27.1,34.9 27.1,32.3 27.1,32.3 "/><polygon points="29.1,32.8 29.7,32.8 29.7,32.3 28,32.3 28,32.8 28.6,32.8 28.6,34.9 29.1,34.9 29.1,32.8 29.1,32.8 "/><polygon points="31.3,33.7 31.3,34.9 31.8,34.9 31.8,33.7 32.7,32.3 32.1,32.3 31.5,33.2 31,32.3 30.4,32.3 31.3,33.7 31.3,33.7 "/><polygon points="3.3,28.7 3.3,28.3 1.8,28.3 1.8,30.9 3.3,30.9 3.3,30.5 2.4,30.5 2.4,29.8 3.3,29.8 3.3,29.3 2.4,29.3 2.4,28.7   3.3,28.7 3.3,28.7 "/><path d="M6.5,31l-0.4-0.4c0.2-0.3,0.3-0.6,0.3-0.9c0-0.8-0.6-1.4-1.3-1.4c0,0-0.1,0-0.1,0c-0.8,0-1.4,0.6-1.4,1.4  C3.6,30.4,4.2,31,5,31c0.2,0,0.5-0.1,0.7-0.2L5.9,31L6.5,31z M5.4,29.9H4.8l0.5,0.5c-0.1,0.1-0.2,0.1-0.3,0.1  c-0.5,0-0.8-0.3-0.8-0.8c0,0,0,0,0-0.1c0-0.5,0.4-0.8,0.8-0.8s0.8,0.4,0.8,0.8c0,0,0,0,0,0c0,0.2-0.1,0.4-0.2,0.5L5.4,29.9L5.4,29.9  z"/><path d="M6.8,29.9C6.7,30.4,7,30.9,7.6,31c0.1,0,0.2,0,0.2,0c0.6,0,1-0.4,1.1-0.9c0-0.1,0-0.1,0-0.2v-1.6H8.3v1.5  c0,0.3,0,0.8-0.5,0.8s-0.5-0.5-0.5-0.8v-1.5H6.8V29.9z"/><path d="M10.9,30.4l0.2,0.5h0.6l-1.1-2.7h-0.4l-1.1,2.7h0.6l0.2-0.5H10.9z M10.8,29.9h-0.7l0.3-0.9l0,0L10.8,29.9L10.8,29.9z"/><polygon points="12.5,28.3 12,28.3 12,30.9 13.3,30.9 13.3,30.5 12.5,30.5 12.5,28.3 12.5,28.3 "/><polygon points="16.3,29.3 16.3,28.3 15.8,28.3 15.8,30.9 16.3,30.9 16.3,29.7 17.4,29.7 17.4,30.9 17.9,30.9 17.9,28.3 17.4,28.3  17.4,29.3 16.3,29.3 16.3,29.3 "/><path d="M19.7,31c0.8,0,1.3-0.7,1.3-1.4c0-0.8-0.7-1.3-1.4-1.3c-0.7,0-1.3,0.6-1.3,1.4C18.3,30.4,18.9,31,19.7,31  C19.6,31,19.7,31,19.7,31z M19.7,28.8c0.5,0,0.8,0.4,0.8,0.9c0,0.5-0.4,0.8-0.8,0.8s-0.8-0.4-0.8-0.8l0,0  C18.8,29.1,19.2,28.8,19.7,28.8z"/><path d="M21.4,29.9c-0.1,0.6,0.4,1.1,1,1.2c0.6,0.1,1.1-0.4,1.2-1c0-0.1,0-0.1,0-0.2v-1.6H23v1.5c0,0.3,0,0.8-0.5,0.8  S22,30.1,22,29.8v-1.5h-0.6L21.4,29.9L21.4,29.9z"/><path d="M25.6,28.5c-0.2-0.2-0.5-0.3-0.8-0.3c-0.4,0-0.8,0.3-0.8,0.7c0,0,0,0,0,0c0,0.4,0.3,0.6,0.6,0.7s0.5,0.2,0.5,0.4  c0,0.2-0.1,0.4-0.3,0.4c0,0,0,0,0,0c-0.2,0-0.4-0.2-0.5-0.4l-0.4,0.3c0.2,0.3,0.5,0.5,0.9,0.5c0.5,0,0.9-0.3,0.9-0.8  c0,0,0-0.1,0-0.1c0-0.9-1.1-0.7-1.1-1.1c0-0.2,0.2-0.3,0.4-0.3c0.2,0,0.3,0.1,0.4,0.2L25.6,28.5L25.6,28.5z"/><polygon points="26.6,28.3 26.1,28.3 26.1,30.9 26.6,30.9 26.6,28.3 26.6,28.3 "/><polygon points="27.1,30.9 27.7,30.9 27.7,29.1 27.7,29.1 29.2,31 29.6,31 29.6,28.3 29,28.3 29,30 29,30 27.5,28.2 27.1,28.2   27.1,30.9 27.1,30.9 "/><path d="M31.4,29.5v0.4H32c0,0.3-0.3,0.6-0.6,0.6c-0.5,0-0.8-0.4-0.8-0.9c0,0,0,0,0,0c0-0.5,0.3-0.9,0.8-0.9c0,0,0,0,0,0  c0.3,0,0.5,0.2,0.6,0.4l0.5-0.2c-0.2-0.4-0.7-0.6-1.1-0.6c-0.7,0-1.4,0.6-1.4,1.3c0,0,0,0.1,0,0.1c0,0.7,0.5,1.4,1.3,1.4  c0,0,0,0,0.1,0c0.7,0,1.3-0.5,1.3-1.2c0-0.1,0-0.1,0-0.2v-0.1L31.4,29.5z"/></svg>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

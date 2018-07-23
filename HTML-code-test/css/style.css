@@ -1,0 +1,426 @@
+/* 44 more shades to go */
+/* Set the color the link and hover states; boolean for the underline */
+/* Clear any possible floats to reset height of parent */
+/* Testing class for looking at the widths of objects */
+/*
+.btest {
+	border:1px red solid
+}
+*/
+body {
+  background-color: #eeeeee;
+  color: #323232;
+  padding-top: 3.7rem;
+}
+@media (min-width: 768px) {
+  body {
+    padding-top: 5rem;
+  }
+}
+@media (min-width: 992px) {
+  body {
+    padding-top: 6.7rem;
+  }
+}
+
+header {
+  font-size: 0.875rem;
+}
+
+.holder {
+  max-width: 1150px;
+  margin: auto;
+}
+
+/* xs */
+.logo img {
+  width: 50px;
+  height: auto;
+}
+@media (min-width: 577px) {
+  .logo img {
+    width: 150px;
+  }
+}
+@media (min-width: 768px) {
+  .logo img {
+    width: 250px;
+  }
+}
+@media (min-width: 992px) {
+  .logo img {
+    width: 350px;
+  }
+}
+
+nav.top {
+  background: white;
+}
+nav.top h1 {
+  font-size: 1rem;
+}
+nav.top .header-right-contact {
+  font-size: 0.775rem;
+}
+nav.top .header-right-contact a:link, nav.top .header-right-contact a:visited {
+  color: #707070;
+}
+nav.top .header-right-contact a:link else, nav.top .header-right-contact a:visited else {
+  text-decoration: none;
+}
+nav.top .header-right-contact a:hover, nav.top .header-right-contact a:active {
+  color: #6e6e6e;
+}
+@media (min-width: 768px) {
+  nav.top {
+    display: block;
+  }
+  nav.top h1.logo {
+    float: left;
+    width: 45%;
+  }
+  nav.top .header-right-contact {
+    float: right;
+    width: 45%;
+  }
+  nav.top .header-right-contact ul {
+    width: 100px;
+    float: right;
+  }
+  nav.top .site-nav {
+    float: right;
+    width: 50%;
+  }
+}
+
+.site-nav ul {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+@media (min-width: 992px) {
+  .site-nav ul {
+    margin-top: 1rem !important;
+  }
+}
+.site-nav ul a:link, .site-nav ul a:visited {
+  color: #323232;
+}
+.site-nav ul a:link else, .site-nav ul a:visited else {
+  text-decoration: none;
+}
+.site-nav ul a:hover, .site-nav ul a:active {
+  color: #6e6e6e;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #aaaaaa;
+}
+
+.header-right-contact {
+  color: #aaaaaa;
+}
+
+.header-right-contact ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.header-right-contact ul li {
+  /*flex-basis:50%;*/
+  text-align: center;
+}
+.header-right-contact ul li span {
+  display: block;
+}
+
+#custom nav.top {
+  font-size: 0.875rem;
+  color: #aaaaaa;
+}
+
+/* set the colors of the different svgs */
+.icon-set {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  content: " ";
+}
+.icon-set path {
+  fill: #237377;
+  stroke: #237377;
+}
+
+.icon {
+  height: 14px;
+  width: 14px;
+  margin: auto;
+}
+
+.contact-icon {
+  background-color: #a2d410;
+  -webkit-mask-image: url(contact.svg);
+  mask-image: url(../images/SVGs/contact.svg);
+  height: 14px;
+  width: 14px;
+  margin: auto;
+}
+
+/* Attempt to change the color of the SVGs using mask-image; doesn't work in IE */
+/*
+.contact-menu-icon {
+	background-color: $light-teal;
+	-webkit-mask-image: url(../images/SVGs/contact.svg);
+    mask-image: url(../images/SVGs/contact.svg);
+}*/
+/*
+.my-icon {
+	background-color: $teal;
+	-webkit-mask-image: url(../images/SVGs/contact.svg);
+    mask-image: url(../images/SVGs/contact.svg);
+}
+
+.account-menu-icon {
+	background-color: $light-teal;
+	-webkit-mask-image: url(../images/SVGs/account.svg);
+    mask-image: url(../images/SVGs/account.svg);
+}
+
+.nav-menu-icon {
+	background-color: $light-teal;
+	-webkit-mask-image: url(../images/SVGs/menu.svg);
+    mask-image: url(../images/SVGs/menu.svg);
+}
+*/
+.search-icon {
+  width: 14px;
+  height: 14px;
+  margin: -1rem auto;
+}
+.search-icon path {
+  fill: white;
+}
+
+/*
+.website-menu-icon {
+	background-color: $light-teal;
+	-webkit-mask-image: url(../images/SVGs/website.svg);
+    mask-image: url(../images/SVGs/website.svg);
+}
+
+
+.office-menu-icon {
+	background-color:  $light-teal;
+	-webkit-mask-image: url(../images/SVGs/office.svg);
+    mask-image: url(../images/SVGs/office.svg);
+}
+
+.newsletter-menu-icon {
+	background-color:  $light-teal;
+	-webkit-mask-image: url(../images/SVGs/enewsletter.svg);
+    mask-image: url(../images/SVGs/enewsletter.svg);
+}*/
+.agent-location {
+  font-size: 0.875rem;
+}
+.agent-location a:link, .agent-location a:visited {
+  color: #237377;
+}
+.agent-location a:link else, .agent-location a:visited else {
+  text-decoration: none;
+}
+.agent-location a:hover, .agent-location a:active {
+  color: #227074;
+}
+.agent-location a[href^="tel:"]:link {
+  color: #323232;
+}
+.agent-location span + span {
+  margin-left: 1rem;
+}
+
+#agent-about a:link, #agent-about a:visited {
+  color: #237377;
+}
+#agent-about a:link else, #agent-about a:visited else {
+  text-decoration: none;
+}
+#agent-about a:hover, #agent-about a:active {
+  color: #227074;
+}
+
+button.custom-btn {
+  color: #323232;
+}
+button.custom-btn:hover {
+  color: #303030;
+}
+
+#agent-information p {
+  font-size: 0.875rem;
+  line-height: 1.6rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+strong {
+  color: #aaaaaa;
+  font-weight: normal;
+  font-size: 0.875rem;
+}
+
+.contact-me {
+  width: 100%;
+  background-color: #237377;
+  font-size: 1.2rem;
+}
+
+.find-listings {
+  background: #aaaaaa;
+  font-size: 0.775rem;
+  box-shadow: 0px 5px 3.5px rgba(170, 170, 170, 0.65);
+  font-weight: bold;
+}
+.find-listings span {
+  color: white;
+}
+.find-listings input[type="text"] {
+  font-size: 0.875rem;
+  /*text-indent:-10px;*/
+}
+.find-listings a:link, .find-listings a:visited {
+  color: white;
+  text-decoration: underline;
+}
+.find-listings a:link else, .find-listings a:visited else {
+  text-decoration: none;
+}
+.find-listings a:hover, .find-listings a:active {
+  color: #eeeeee;
+}
+
+.search-field {
+  width: 50%;
+  border: 1px solid red;
+}
+
+.search-options {
+  display: flex;
+  border: 1px solid red;
+}
+
+.acc-headings {
+  width: 100%;
+}
+
+.acc-group > div {
+  border-bottom: 2px #eeeeee solid;
+  border-radius: 0;
+  color: #aaaaaa;
+  text-align: center;
+  font-weight: bold;
+}
+.acc-group > div.active {
+  border-bottom: 2px #237377 solid;
+  color: #237377;
+}
+
+.custom-dropdown {
+  display: block;
+  margin: 1rem 1rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  border: 1px #aaaaaa solid;
+}
+.custom-dropdown ~ .dropdown-menu {
+  width: 90%;
+}
+.custom-dropdown span.angle-down {
+  position: absolute;
+  content: "";
+  height: 6px;
+  top: 0.5rem;
+  right: 1rem;
+  width: 10px;
+}
+.custom-dropdown span.angle-down path {
+  fill: #aaaaaa;
+}
+
+.agent-location svg * {
+  fill: #237377;
+}
+
+.light-social svg path, .light-social svg circle {
+  fill: white;
+}
+
+.dark-social svg path, .dark-social svg circle {
+  fill: #595959;
+}
+
+.white-icons svg * {
+  fill: white;
+}
+
+#agent-about {
+  background-color: white;
+}
+
+footer {
+  background-color: #2399a6;
+  color: white;
+  font-size: 0.875rem;
+}
+footer a:link, footer a:visited {
+  color: white;
+}
+footer a:link else, footer a:visited else {
+  text-decoration: none;
+}
+footer a:hover, footer a:active {
+  color: #e6e6e6;
+}
+footer div.policy nav a:link, footer div.policy nav a:visited {
+  color: #237377;
+  text-decoration: underline;
+}
+footer div.policy nav a:link else, footer div.policy nav a:visited else {
+  text-decoration: none;
+}
+footer div.policy nav a:hover, footer div.policy nav a:active {
+  color: #2f999e;
+}
+footer div.policy a {
+  text-decoration: underline;
+}
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  /* IE10+ adjustment of the logos.  */
+  .navbar-brand picture {
+    display: none;
+  }
+
+  .navbar-brand {
+    background-image: url(../images/SVGs/TEN-logo-mark.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 51px;
+    height: 34px;
+    content: "test";
+    display: block;
+  }
+}
+@media screen and (-ms-high-contrast: active) and (min-width: 577px), screen and (-ms-high-contrast: none) and (min-width: 577px) {
+  .navbar-brand {
+    width: 166.88px;
+    height: 39px;
+    background-image: url(../images/SVGs/TEN-logo.svg);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

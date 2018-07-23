@@ -1,0 +1,527 @@
+/* 44 more shades to go */
+$light-gray:#eeeeee;
+$medium-gray:#aaaaaa;
+$gray:#707070;
+$dark-gray:#323232;
+$darker-gray:#595959;
+$darkest-gray:#323232;
+
+$teal:#237377;
+$light-teal:#2399a6;
+$tealRGB: rgba(35,153,165,1);
+
+
+@mixin setShadow(){
+	box-shadow:0px 5px 3.5px transparentize($medium-gray, 0.35%);
+}
+
+@mixin makeIcon($src){
+	padding-left:45px;
+	&:before{
+		position:absolute;
+		content: "";
+		height: 20px;
+		width: 20px;
+		margin-left:-45px;
+		background: url($src) center;
+		    background-size: auto auto;
+		    background-repeat:no-repeat;
+		background-size: 100%;
+		fill: blue;
+	}
+}
+
+/* Set the color the link and hover states; boolean for the underline */
+@mixin setLinks($normal, $hover, $underline:false){
+	a {
+		&:link, &:visited{
+			color:$normal;
+			@if $underline {
+			    text-decoration:underline;
+			  } else {
+			    text-decoration:none;
+			  }
+		}
+		&:hover, &:active{
+			color:$hover;
+		}
+	}
+}
+
+/* Clear any possible floats to reset height of parent */
+@mixin clearIt() {
+	&:after {
+		clear:both;
+		float:none;
+		width:100%;
+		display:block;
+		height:auto;
+		content:"";
+	}
+}
+
+
+/* Testing class for looking at the widths of objects */
+/*
+.btest {
+	border:1px red solid
+}
+*/
+
+
+body {
+	background-color:#eeeeee;
+	color:#323232;
+	padding-top: 3.7rem;
+  	// fix for the height of the navigation bar
+	@media (min-width: 768px) { 
+		padding-top: 5rem;
+	}
+	// fix for the height of the navigation bar
+	@media (min-width: 992px) { 
+		padding-top: 6.7rem;
+	}
+}
+
+header {
+	font-size:0.875rem;
+}
+
+
+.holder {
+	max-width:1150px;
+	margin:auto;
+}
+
+
+
+/* xs */
+.logo img {
+    width: 50px;
+    height: auto;
+
+	// Small devices (landscape phones, 576px and up)
+	@media (min-width: 577px) { 
+		width:150px;
+	}
+
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) { 
+		width:250px;
+	}
+
+	// Large devices (desktops, 992px and up)
+	@media (min-width: 992px) { 
+		width:350px;
+	}
+
+}
+
+
+
+
+nav.top {
+	background:white;
+
+	& h1 {
+		font-size:1rem;
+	}
+
+	& .header-right-contact {
+		@include setLinks($gray, darken($gray,0.7));
+		font-size:0.775rem;
+	}
+
+
+	@media (min-width: 768px) { 
+		& {
+			display:block;
+		}
+
+		& h1.logo {
+			float:left;
+			width:45%;
+		}
+
+		& .header-right-contact {
+			float:right;
+			width:45%;
+
+			& ul {
+				width:100px;
+				float:right;
+			}
+
+		}
+
+		& .site-nav {
+			float:right;
+			width:50%;
+		}
+	}
+}
+
+.site-nav ul {
+	width:100%;
+	text-transform:uppercase;
+	font-size:0.875rem;
+
+	@media (min-width:992px){
+		margin-top: 1rem !important;;
+	}
+
+	@include setLinks($darkest-gray, darken($gray,0.7));
+	font-weight:bold;
+}
+
+
+.navbar-dark .navbar-toggler {
+    color: $medium-gray;
+}
+
+.header-right-contact {
+	color: $medium-gray;
+}
+
+
+.header-right-contact {
+	& ul {
+		display:flex;
+		flex-wrap: nowrap;	
+		justify-content:space-around;
+		& li{
+			/*flex-basis:50%;*/
+			text-align:center;
+			& span {
+				display:block;
+			}
+		}
+	}
+}
+
+#custom nav.top {
+	font-size:0.875rem;
+	color: $medium-gray;
+}
+
+/* set the colors of the different svgs */
+.icon-set {
+	width: 20px;
+	height: 20px;
+	margin:auto;
+	content:" ";
+	& path{
+		fill:$teal;
+		stroke:$teal;
+	}
+}
+
+
+
+.icon {
+	height: 14px;
+	width: 14px;
+	margin:auto;
+}
+
+.contact-icon {
+    background-color: #a2d410;
+    -webkit-mask-image: url(contact.svg);
+    mask-image: url(../images/SVGs/contact.svg);
+    height: 14px;
+	width: 14px;
+	margin:auto;
+}
+
+
+/* Attempt to change the color of the SVGs using mask-image; doesn't work in IE */
+/*
+.contact-menu-icon {
+	background-color: $light-teal;
+	-webkit-mask-image: url(../images/SVGs/contact.svg);
+    mask-image: url(../images/SVGs/contact.svg);
+}*/
+/*
+.my-icon {
+	background-color: $teal;
+	-webkit-mask-image: url(../images/SVGs/contact.svg);
+    mask-image: url(../images/SVGs/contact.svg);
+}
+
+.account-menu-icon {
+	background-color: $light-teal;
+	-webkit-mask-image: url(../images/SVGs/account.svg);
+    mask-image: url(../images/SVGs/account.svg);
+}
+
+.nav-menu-icon {
+	background-color: $light-teal;
+	-webkit-mask-image: url(../images/SVGs/menu.svg);
+    mask-image: url(../images/SVGs/menu.svg);
+}
+*/
+
+.search-icon {
+	width: 14px;
+	height: 14px;
+	margin:-1rem auto;
+	& path {
+		fill:white;
+	}
+}
+
+/*
+.website-menu-icon {
+	background-color: $light-teal;
+	-webkit-mask-image: url(../images/SVGs/website.svg);
+    mask-image: url(../images/SVGs/website.svg);
+}
+
+
+.office-menu-icon {
+	background-color:  $light-teal;
+	-webkit-mask-image: url(../images/SVGs/office.svg);
+    mask-image: url(../images/SVGs/office.svg);
+}
+
+.newsletter-menu-icon {
+	background-color:  $light-teal;
+	-webkit-mask-image: url(../images/SVGs/enewsletter.svg);
+    mask-image: url(../images/SVGs/enewsletter.svg);
+}*/
+
+.agent-location {
+	font-size:0.875rem;
+	@include setLinks($teal, darken($teal, 0.7));
+
+	a[href^="tel:"]:link{
+		color:$dark-gray;
+	}
+
+	& span + span {
+		margin-left:1rem;
+	}
+}
+
+#agent-about {
+	@include setLinks($teal, darken($teal, 0.7));
+}
+
+button.custom-btn {
+	color:$dark-gray;
+
+	&:hover {
+		color:darken($dark-gray, 0.7);
+	}
+}
+
+#agent-information p {
+	font-size:0.875rem;
+	line-height:1.6rem;
+}
+
+h5 {
+	font-size:1rem;
+	font-weight:bolder;
+}
+
+strong {
+	color:$medium-gray;
+	font-weight:normal;
+	font-size:0.875rem;
+}
+
+
+
+.contact-me {
+	width:100%;
+	background-color:$teal;
+	font-size:1.2rem;
+}
+
+
+
+
+.find-listings{
+	background: #aaaaaa;
+	font-size:0.775rem;
+
+	@include setShadow();
+
+	& span {
+		color:white;
+	}
+
+	& input[type="text"] {
+		font-size:0.875rem;
+		/*text-indent:-10px;*/
+	}
+
+	@include setLinks(white, $light-gray, true);
+	font-weight:bold;
+
+
+}
+
+.search-field{
+	width:50%;
+	border:1px solid red;
+}
+
+.search-options{
+	display:flex;
+	border:1px solid red;
+}
+
+
+.acc-headings{
+	width:100% ;
+}
+.acc-group {
+	
+	& > div {
+		border-bottom:2px $light-gray solid;
+		border-radius:0;
+		color:$medium-gray;
+		text-align:center;
+		font-weight:bold;
+	}
+
+	& > div.active {
+		border-bottom:2px $teal solid;
+		color:$teal;
+	}
+
+}
+
+
+.custom-dropdown {
+	display: block;
+	margin: 1rem 1rem;
+	padding: 0.5rem 1rem;
+	position:relative;
+	border:1px $medium-gray solid;
+
+
+
+	& ~ .dropdown-menu {
+		width: 90%;
+	}
+
+	& span.angle-down {
+		position:absolute;
+		content: "";
+		height: 6px;
+		top:0.5rem;
+		right:1rem;
+		width: 10px;
+
+		& path {
+			fill:$medium-gray;
+		}
+	}
+}
+
+.agent-location svg *{
+	fill:$teal;
+}
+
+.light-social svg path, .light-social svg circle{
+	fill:white;
+}
+
+.dark-social svg path, .dark-social svg circle{
+	fill:$darker-gray;
+}
+
+.white-icons svg *{
+	fill:white;	
+}
+
+#agent-card{
+	
+}
+
+#agent-about {
+	background-color:white;
+}
+
+
+footer {
+	background-color:#2399a6;
+	color:white;
+	
+	font-size:0.875rem;
+
+	@include setLinks(white, darken(white,10));
+
+	div.policy {
+		
+		& nav {
+			@include setLinks($teal, lighten($teal,10), true);
+		}
+
+
+
+		& a {
+			text-decoration:underline;
+		}
+
+	}
+}
+
+
+
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+   /* IE10+ adjustment of the logos.  */  
+   
+	.navbar-brand picture {
+		display:none;
+	}
+
+	.navbar-brand {
+		background-image:url(../images/SVGs/TEN-logo-mark.svg);
+		background-size:contain;
+		background-repeat:no-repeat;
+		width:51px;
+		height:34px;
+		content:"test";
+		display:block;
+
+		@media (min-width: 577px) { 
+			width:166.88px;
+			height:39px;
+			background-image:url(../images/SVGs/TEN-logo.svg);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
